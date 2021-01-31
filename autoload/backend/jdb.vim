@@ -8,7 +8,7 @@ let s:config['break_cmd'] = 'stop at'
 let s:config['clear_cmd'] = 'clear'
 
 let s:config['locate_pattern'] = {
-      \ 'short': '^Breakpoint hit: ',
+      \ 'short': '^(>|\S+\[\d\]) ',
       \ 'long': '^.+: "\w+=\S+", (\S+) \w+=([0-9,]+) \S+$',
       \ 'index': [1, 2],
       \ }
