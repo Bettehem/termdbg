@@ -9,19 +9,19 @@ let s:config['clear_cmd'] = 'clear'
 
 let s:config['locate_pattern'] = {
       \ 'short': '^(>|\S+\[\d\]) ',
-      \ 'long': '^.+: "\w+=\S+", (\S+) \w+=([0-9,]+) \S+$',
+      \ 'long': '\v^.+: "\w+=\S+", (\S+) \w+=([0-9,]+) \S+$',
       \ 'index': [1, 2],
       \ }
 
 let s:config['new_breakpoint_pattern'] = {
       \ 'short': '^Set breakpoint \S+:[0-9,]+',
-      \ 'long': '^Set breakpoint (\S+):([0-9,]+)$',
+      \ 'long': '\v^Set breakpoint (\S+):([0-9,]+)$',
       \ 'index': [2, 3],
       \ }
 
 let s:config['del_breakpoint_pattern'] = {
       \ 'short': '^Removed: breakpoint \S+:[0-9,]+',
-      \ 'long': '^Removed: breakpoint (\S+):([0-9,]+)$',
+      \ 'long': '\v^Removed: breakpoint (\S+):([0-9,]+)$',
       \ 'index': [2, 3],
       \ }
 
